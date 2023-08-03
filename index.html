@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>WhatsApp Chat</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
   <div class="container">
     <h1>WhatsApp Chat</h1>
     <form id="chatForm">
-      <label for="country">Country:</label>
-      <select id="country" name="country">
-        <option value="91">India (+91)</option>
-        <!-- Add more country options here -->
+        <label for="country">Country:</label>
+        <select id="country" name="country"></select>
       </select>
       <br>
       <label for="phoneNumber">Phone Number:</label>
       <input type="text" id="phoneNumber" name="phoneNumber" required>
       <br>
-      <button type="button" id="startChat">Start Chat</button>
+      <button type="button" id="startChat">
+        <i class="fab fa-whatsapp"></i> Start Chat
+      </button>
+      
     </form>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
