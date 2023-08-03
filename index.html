@@ -6,14 +6,14 @@
   <link rel="stylesheet" href="styles.css">
   <title>WhatsApp Chat</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>WhatsApp Chat</h1>
     <form id="chatForm">
-        <label for="country">Country:</label>
-        <select id="country" name="country"></select>
-      </select>
+      <label for="country">Country:</label>
+      <select id="country" name="country"></select>
       <br>
       <label for="phoneNumber">Phone Number:</label>
       <input type="text" id="phoneNumber" name="phoneNumber" required>
@@ -21,9 +21,22 @@
       <button type="button" id="startChat">
         <i class="fab fa-whatsapp"></i> Start Chat
       </button>
-      
     </form>
   </div>
+  
+  <div class="made-by">Made by</div>
+  <div class="author">Prajwal</div>
+  <div><span id="element"></span></div>
+
   <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Graphic Designer', 'UI/UX Designer','Front-end Developer'],
+      typeSpeed: 50,
+      loop:true,
+    });
+  </script>
 </body>
 </html>
